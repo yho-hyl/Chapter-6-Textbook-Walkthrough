@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
 
       //Add an event listner for every form element
       for (let i = 0; i < orderForm.elements.length; i++) {
-            orderForm.elements[i].addEventListner("change", calcOrder);
+            orderForm.elements[i].addEventListener("change", calcOrder);
       }
       //Calculate the cost of the Order
       calcOrder();
